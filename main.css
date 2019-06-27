@@ -39,12 +39,21 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
+.logo {
+    font-size: 20px;
+    font-family: 'Slabo 13px', serif;
+}
 li {
+    font-family: 'Slabo 13px', serif;
     margin: 0 10px;
     list-style-type: none;
 }
 a {
+    color: rgb(188,109,51);
     text-decoration: none;
+}
+a:focus {
+    outline-color: rgb(87,153,12);
 }
 .head-page {
     background-color: rgb(255,255,255, .5);
@@ -88,10 +97,14 @@ a {
     margin-bottom: 25%;
     text-align: center;
 }
+.about-border {
+    text-align: center;
+}
 .about-container {
-    background-color: rgb(255,255,255,.5);
+    text-align: left;
+    background-color: rgb(255,255,255,.7);
     margin: 30px 10px;
-    border: 1px solid black;
+    border: 2px solid rgb(188,109,51);
 }
 h2 {
     padding-top: 50px;
@@ -100,17 +113,18 @@ h2 {
     font-family: 'Stint Ultra Expanded', cursive;
 }
 .about-container>p {
+    font-family: 'Slabo 13px', serif;
     font-size: 20px;
-}
-.project-container {
-    background-color: rgb(255,255,255,.5);
-    margin: 0 10px;
-    margin-bottom: 40px;
-    border: 2px solid black;
-}
-.about-container>p {
     margin: 10px 20px;
 }
+
+.project-container {
+    background-color: rgb(255,255,255,.7);
+    margin: 0 10px;
+    margin-bottom: 40px;
+    border: 2px solid rgb(188,109,51);
+}
+
 .contact-container{
     margin-left: 30px;
     margin-bottom: 20px;
@@ -124,14 +138,25 @@ img {
     border-bottom: 1px solid black;
 }
 .project-description {
-    
+    font-family: 'Slabo 13px', serif;
     margin-bottom: 20px;
     margin-left: 10px;
 }
+.project-description>h3 {
+    margin-bottom: 50px;
+    font-family: 'Stint Ultra Expanded', cursive;
+    font-weight: lighter;
+}
 button {
+    cursor: pointer;
+    background-color: rgb(82,62,47);
+    color: rgb(188,109,51);
     font-size: 20px;
     padding: 10px;
     border-radius: 3%;
+}
+button:focus {
+    outline-color: rgb(87,153,12);
 }
 button>.popup {
     display: block;
@@ -143,4 +168,49 @@ button>.popup {
 }
 .prompt {
     font-size: 15px;
+}
+.contact-container>span>a{
+    color: white;
+}
+.contact-container>p>a {
+    color: white;
+}
+.contact-container>span>a:hover{
+    color: black;
+}
+.contact-container>p>a:hover {
+    color: rgb(87,153,12);
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .about-container {
+        max-width: 400px;
+        padding: 30px;
+    }
+    .about-container>p {
+        font-size: 22px;
+    }
+    .project-container {
+        width: 460px;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    .border {
+        margin: 50px 50px;
+        border: 2px solid rgb(188,109,51);
+    }
+    .about-container {
+        max-width: 500px;
+        padding: 30px;
+    }
+    .about-container>p {
+        font-size: 25px;
+    }
+    .project-container {
+        width: 560px;
+    }
 }
