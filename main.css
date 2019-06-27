@@ -1,0 +1,146 @@
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+
+    background-image: url(cold-conifer-dawn-917494.jpg);
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 300;
+}
+main {
+    padding-top: 50px;
+    height: 100%;
+}
+nav {
+    background-color: rgb(230,229,231);
+    height: 50px;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    margin: 0 10px;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.head-page {
+    background-color: rgb(255,255,255, .5);
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-page {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-page {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-page {
+    background-color: rgb(255,255,255,.3);
+    display: flex;
+    flex-direction: column;
+}
+.head-container>h1 {
+    color: rgb(82,62,47);
+    font-family: 'Ultra', serif;
+    font-weight: lighter;
+    font-size: 40px;
+}
+.head-container>p {
+    margin-top: 0;
+    padding-top: 0;
+    color: rgb(188,109,51);
+    font-family: 'Stint Ultra Expanded', cursive;
+    font-size: 40px;
+}
+.head-container {
+    margin-bottom: 25%;
+    text-align: center;
+}
+.about-container {
+    background-color: rgb(255,255,255,.5);
+    margin: 30px 10px;
+    border: 1px solid black;
+}
+h2 {
+    padding-top: 50px;
+    color: rgb(82,62,47);
+    font-size: 50px;
+    font-family: 'Stint Ultra Expanded', cursive;
+}
+.about-container>p {
+    font-size: 20px;
+}
+.project-container {
+    background-color: rgb(255,255,255,.5);
+    margin: 0 10px;
+    margin-bottom: 40px;
+    border: 2px solid black;
+}
+.about-container>p {
+    margin: 10px 20px;
+}
+.contact-container{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.contact-container>h4 {
+    font-size: 30px;
+}
+img {
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.project-description {
+    
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 3%;
+}
+button>.popup {
+    display: block;
+    font-size: 10px;
+}
+.fab, .fas {
+    font-size: 30px;
+    margin: 0 10px;
+}
+.prompt {
+    font-size: 15px;
+}
