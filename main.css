@@ -126,6 +126,7 @@ h2 {
 }
 
 .contact-container{
+    font-family: 'Slabo 13px', serif;
     margin-left: 30px;
     margin-bottom: 20px;
 }
@@ -168,6 +169,9 @@ button>.popup {
 }
 .prompt {
     font-size: 15px;
+}
+.contact-container>h4 {
+    font-family: 'Stint Ultra Expanded', cursive;
 }
 .contact-container>span>a{
     color: white;
